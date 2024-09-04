@@ -1,0 +1,78 @@
+paths:
+  uploads: uploads
+  uploads_use_relative_path: false
+  static: ''
+  dam_uploads: ''
+  dam_static: ''
+  collections: ''
+  data: _data
+  layouts: _layouts
+  includes: _includes
+collections_config:
+  data:
+    path: _data
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  posts:
+    path: _posts
+    output: true
+    icon: notes
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  pages:
+    path: ''
+    output: true
+    filter: strict
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  staff_members:
+    path: _staff_members
+    output: false
+    icon: account_circle
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  tags:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  header_background_image:
+    type: image
+    options:
+      width: 1880
+      height: 1880
+    cascade: true
+  newsletter_background_image:
+    type: image
+    options:
+      width: 1880
+      height: 1880
+    cascade: true
+_select_data:
+  author:
+    name:
+    email:
+    twitter:
+  social:
+    name: Cause Template
+    links:
+      - https://github.com/CloudCannon/cause-jekyll-template
+timezone: Etc/UTC
