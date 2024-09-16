@@ -2,7 +2,7 @@
 # Site
 
 title: Athenry Community Playground
-url: "https://erinsweater.github.io"
+url: "https://athenryplayground.ie"
 baseurl: ""
 google_analytics_key:
 
@@ -16,7 +16,6 @@ author:
 social:
   name: Cause Template
   links:
-    - https://github.com/CloudCannon/cause-jekyll-template
 
 # -----
 # Build
