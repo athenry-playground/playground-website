@@ -1,0 +1,18 @@
+<h2>Upcoming Events</h2>
+<ul class="thirds">
+{% for event in site.events limit:3 %}
+    <li>
+    <a href="{{ event.url }}">
+        {% if event.header_image %}
+        <img src="{{ event.header_image }}" alt="" />
+        {% endif %}
+        <h3>{{ event.title }}</h3>
+    </a>
+    <dl>
+        {% if event.start_time %}<dt>Start time</dt><dd>{{ event.start_time }}</dd>{% endif %}
+        {% if event.location %}<dt>Location</dt><dd>{{ event.location }}</dd>{% endif %}
+    </dl>
+    <p>{{ event.content | truncatewords:50 }} <a href="{{ event.url }}">More details</details></a></p>
+</li>
+{% endfor %}
+</ul>
