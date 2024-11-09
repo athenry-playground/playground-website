@@ -3,7 +3,7 @@ title: Merry Movie Matinee
 start_time: 2024-12-08 15:00
 location: Athenry Community Hall
 register_url: https://donorbox.org/events/700430
-header_image: /images/movie-night-header.png
+header_image: /images/movieheader.png
 ---
 
 Join us for a movie matinee in the Athenry Community Hall.
