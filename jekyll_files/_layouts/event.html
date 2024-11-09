@@ -1,0 +1,18 @@
+---
+layout: post
+---
+{% if page.header_image %}
+<img src="{{ page.header_image }}" alt="" />
+{% endif %}
+<dl>
+    {% if page.start_time %}<dt>Start time</dt><dd>{{ page.start_time | date: "%e %B at %H:%M" }}</dd>{% endif %}
+    {% if page.location %}<dt>Location</dt><dd>{{ page.location }}</dd>{% endif %}
+</dl>
+
+{{ content }}
+
+{% if page.register_url %}
+<div class="button">
+<a href="{{ page.register_url }}">Book now</a>
+</div>
+{% endif %}
