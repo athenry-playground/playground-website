@@ -20,6 +20,7 @@ jobs:
         with:
           ruby-version: '3.4'
           bundler-cache: true
+          working-directory: jekyll_files
 
       - name: Build Jekyll site
         working-directory: jekyll_files
