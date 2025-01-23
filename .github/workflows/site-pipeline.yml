@@ -1,0 +1,33 @@
+name: Athenry Community Playground website pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+          working-directory: jekyll_files
+
+      - name: Build Jekyll site
+        working-directory: jekyll_files
+        run: bundle exec jekyll build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4  
+        with:
+          name: site
+          path: jekyll_files/_site
