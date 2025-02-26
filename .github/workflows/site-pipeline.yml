@@ -33,9 +33,12 @@ jobs:
           path: jekyll_files/_site
 
   deploy:
-    if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://athenryplayground.ie
+    concurrency: production
 
     steps:
       - name: Checkout code
