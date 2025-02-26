@@ -13,6 +13,6 @@ layout: post
 
 {% if page.register_url %}
 <div class="button">
-<a href="{{ page.register_url }}">Book now</a>
+<a href="{{ page.url }}">{{ page.button_text | default: "Book now" }}</a>
 </div>
 {% endif %}
