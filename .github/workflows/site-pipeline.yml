@@ -31,3 +31,23 @@ jobs:
         with:
           name: site
           path: jekyll_files/_site
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: ./jekyll_files/_site
+
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
+      - name: Deploy to FTP server using lftp
+        env:
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: ./scripts/deploy.sh
