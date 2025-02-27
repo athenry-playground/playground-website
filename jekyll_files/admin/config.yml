@@ -7,7 +7,7 @@ public_folder: "/images"
 collections:
 - name: "event"
   label: "Event"
-  folder: "_events"
+  folder: "jekyll_files/_events"
   create: true
   slug: "{{year}}-{{slug}}"
   fields:
