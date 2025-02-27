@@ -1,0 +1,19 @@
+backend:
+  name: github
+  branch: main
+  repo: athenry-playground/playground-website
+media_folder: "jekyll_files/images"
+public_folder: "/images"
+collections:
+- name: "event"
+  label: "Event"
+  folder: "_events"
+  create: true
+  slug: "{{year}}-{{slug}}"
+  fields:
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Header image", name: "header_image", widget: "image" }
+    - { label: "Start time", name: "start_time", widget: "datetime" }
+    - { label: "Location", name: "location", widget: "string" }
+    - { label: "Register URL", name: "register_url", widget: "text" }
+    - { label: "Button text", name: "button_text", widget: "text" }
