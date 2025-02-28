@@ -16,5 +16,5 @@ collections:
     - { label: "Start time", name: "start_time", widget: "datetime" }
     - { label: "Location", name: "location", widget: "string" }
     - { label: "Register URL", name: "register_url", widget: "text" }
-    - { label: "Button text", name: "button_text", widget: "text" }
+    - { label: "Button text", name: "button_text", widget: "string" }
     - { label: "Body", name: "body", widget: "markdown" }
