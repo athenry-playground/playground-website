@@ -17,3 +17,4 @@ collections:
     - { label: "Location", name: "location", widget: "string" }
     - { label: "Register URL", name: "register_url", widget: "text" }
     - { label: "Button text", name: "button_text", widget: "text" }
+    - { label: "Body", name: "body", widget: "markdown" }
