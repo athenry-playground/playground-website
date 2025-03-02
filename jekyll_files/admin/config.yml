@@ -18,3 +18,12 @@ collections:
     - { label: "Register URL", name: "register_url", widget: "text" }
     - { label: "Button text", name: "button_text", widget: "string" }
     - { label: "Body", name: "body", widget: "markdown" }
+- name: "page"
+  label: "Page"
+  files:
+    - file: "jekyll_files/index.html"
+      label: "Home"
+      name: "home"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Latest Newsletter URL", name: "latest_newsletter_url", widget: "string" }

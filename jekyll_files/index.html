@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Athenry Community Playground
+latest_newsletter_url: https://preview.mailerlite.io/preview/1073154/emails/146335911082198461
 ---
 
 <header>
@@ -62,7 +63,7 @@ title: Athenry Community Playground
 <div class="container">
 {% include upcoming-events.html %}
 </div>
-
+<div class="newsletter">
     <div id="mlb2-17400561" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-17400561">
       <div class="ml-form-align-center ">
         <div class="ml-form-embedWrapper embedForm">
@@ -126,6 +127,12 @@ title: Athenry Community Playground
         </div>
       </div>
     </div>
+  {% if page.latest_newsletter_url %}
+  <div>
+    <a href="{{ page.latest_newsletter_url }}">Read our latest newsletter</a>
+  </div>
+  {% endif %}
+</div>
 
   
 
