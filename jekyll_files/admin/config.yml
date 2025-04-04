@@ -16,7 +16,7 @@ collections:
     - { label: "Header image", name: "header_image", widget: "image", required: false }
     - { label: "Start time", name: "start_time", widget: "datetime", required: false }
     - { label: "Location", name: "location", widget: "string", required: false }
-    - { label: "Register URL", name: "register_url", widget: "text", required: false }
+    - { label: "Register URL", name: "register_url", widget: "string", required: false }
     - { label: "Button text", name: "button_text", widget: "string", required: false }
     - { label: "Body", name: "body", widget: "markdown" }
 - name: "page"
