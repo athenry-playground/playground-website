@@ -1,13 +1,18 @@
-html, body {
+body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	color: #333;
+	color: #888;
 	min-width: 380px;
+	font-size: 1.3em;
 }
 
 img {
 	max-width: 100%;
+
+	&.left {
+		float: left;
+	}
 }
 
 hr {
@@ -17,27 +22,29 @@ hr {
 	margin-bottom: 50px;
 }
 
+h1, h2, h3, h4, .newsletter {
+	color: #333;
+}
+
 h1 {
 	padding: 0;
 	margin: 0 0 20px 0;
-	font-size: 3em;
+	font-size: 2.3em;
 }
 
 h2 {
-	font-size: 2.3em;
+	font-size: 1.8em;
 	margin: 0 0 30px 0;
 	text-align: center;
 }
 
 h3 {
-	font-size: 1.8em;
+	font-size: 1.4em;
 	margin: 20px 0 20px 0;
 }
 
 p {
-	font-size: 1.3em;
 	line-height: 1.4em;
-	color: #888;
 }
 
 nav {
