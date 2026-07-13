@@ -21,6 +21,6 @@ TICKETED ENTRY includes access to the following:
 * 📚 Storytelling and Bookish Delights at the Little Free Library
 * ... And much, much more!
 
-€15 per child</br>
-€5 per adult</br>
+€15 per child<br>
+€5 per adult<br>
 Children under 2 go free!
